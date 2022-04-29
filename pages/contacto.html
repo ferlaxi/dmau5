@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <!--logo + nav-->
+    <header>
+        <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="biografia.html">Biografía</a></li>
+                <li><a href="discografia.html">Discografía</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--fin logo + nav-->
+    <!--main + título-->
+    <main>
+        <h2>CONTACTO</h2>
+    <!--Inicio del formulario-->
+    <div>
+        <form action="#">
+            <fieldset>
+                <div>
+                    <p>Nombre:</p>
+                    <input type="text" name="nombre" id="name">
+                </div>
+                <div>
+                    <p>Apellido:</p>
+                    <input type="text" name="nombre" id="name">
+                </div>
+                <div>
+                    <p>Correo:</p> 
+                    <input type="email" name="correo" id="email">
+                </div>
+                <p>Selecciona Ciudad</p>
+                <select name="ciudad" id="city">
+                    <option value="salta">SALTA</option>
+                    <option value="buenos_aires">BS.AS.</option>
+                    <option value="cordoba">CORDOBA</option>
+                    <option value="Otro">OTRO</option>
+                </select>
+                <div>
+                    <p>¿Quiere recibir información?</p>
+                    <input type="checkbox" name="suscribir" id="sus">
+                </div>
+                <textarea name="mensaje" id="textarea" cols="30" rows="10" placeholder="Ingresa mensaje aquí"></textarea>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    </main>
+    <!--Fin del formulario-->
+    <!--Inicio del footer-->
+    <footer>
+        Logo
+        Menu
+        Redes
+        Suscribirse
+    </footer>
+    <!--Fin del footer-->
+</body>
+</html>

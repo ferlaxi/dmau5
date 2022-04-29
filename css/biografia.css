@@ -1,0 +1,257 @@
+/* reset del css */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* instalamos la fuente */
+@font-face {
+    font-family: 'Jost', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,500;0,600;1,100&display=swap);
+}
+
+header img{
+    height: 100px;
+}
+
+.menu_items li a{
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bolder;    
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    color: white;
+    background: rgb(131,132,133);
+    background: radial-gradient(circle, rgba(131,132,133,1) 0%, rgba(42,67,97,1) 100%);
+    border: solid 3px rgb(0, 0, 0);
+    grid-area: pie;
+}
+
+/* tablet */
+@media (min-width:768px) and (max-width:1200px){
+    header img{
+        max-height: 42px;
+    }
+    .menu_items li a{
+        font-size: 16px;
+    }
+    #infoprincipal{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+}
+
+/* movil */
+@media (min-width:360px) and (max-width:767px){
+    header{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    header img{
+        height: 40px;
+        max-width: 100%;
+    }
+
+    .menu_items li a{
+        font-size: 10px;
+        margin: 8px;
+    }
+
+    h2{ 
+        font-size: 20px !important;
+    }
+    #infoprincipal{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #principal div img{
+        max-width: 400px;
+    }
+    
+    footer{
+        flex-direction:column;
+    }
+
+    #logo_descrip{
+        margin-left: 200px;
+    }
+
+    #explorar p{
+        margin-left: 230px;
+    }
+
+    #redes p{
+        margin-top: 10px;
+    }
+
+    #contenedor_footer{
+        margin-left: 185px;
+        margin-bottom: 30px;
+    }
+
+    #suscribirse div p{
+        margin-left: 210px;
+    }
+
+    #suscribirse input{
+        margin-left: 190px;
+    }
+
+    #suscribirse button{
+        margin-left: 260px;
+        margin-bottom: 13px;
+    }
+
+    #video_iframe{
+        overflow: hidden;
+        margin-right: 100px;
+    }
+}
+
+.menu_items{
+    display: flex;
+    list-style: none;
+}
+
+
+
+h2{
+    font-family: 'Jost', sans-serif;
+    color: white;
+    font-size: 27px;
+    margin: 15px;
+    text-align: center;
+}
+
+p{
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 100px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(174,192,238);
+    background: linear-gradient(90deg, rgba(174,192,238,1) 0%, rgba(5,8,11,1) 70%);
+    padding-bottom: 4px;
+    border: solid 3px rgb(0, 0, 0);
+    grid-area: cabeza;
+}
+
+body{
+    background: linear-gradient(to left, rgb(80, 80, 112), rgb(19, 19, 19));
+    overflow-x: hidden;
+}
+
+#principal{
+    display: flex;
+    flex-direction: column;
+    grid-area: imgAndDesc;
+    margin-top: 100px;
+}
+
+#infoprincipal{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 40px;
+}
+
+#principal div img{
+    border-radius: 200px;
+    width: 510px;
+}
+
+#secundario{
+    display: flex;
+    flex-direction: column;
+    grid-area: infoextra;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_descrip div img{
+    max-width: 150px;
+    margin: 15px;
+    padding-top: 45px;
+}
+
+#explorar div p{
+    padding: 12px;
+}
+
+#explorar div ul{
+    list-style: none;
+    line-height: 20px;
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+#explorar div ul a{
+    text-decoration: none;
+    color: white;
+}
+
+#redes div p{
+    padding: 15px;
+    text-align: center;
+}
+
+#redes div img{
+    width: 50px;
+    padding-top: 20px;
+}
+
+#contenedor_footer img{
+    padding: 5px;
+}
+
+#suscribirse div p{
+    padding: 15px;
+}
+
+#suscribirse button img{
+    width: 34px;
+    margin: 4px;
+    margin-bottom: 1px;
+}
+
+button{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+input{
+    height: 35px;
+}
+
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "imgAndDesc imgAndDesc"
+    "infoextra infoextra"
+    "pie pie";
+}
+
+.margenbot{
+    margin-bottom: 20px;
+}
